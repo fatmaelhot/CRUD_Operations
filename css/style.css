@@ -1,0 +1,176 @@
+body {
+    background-color: rgb(247, 236, 222);
+    font-family:"PT Sans Caption", sans-serif ;
+  }
+  
+  *::selection {
+    background-color: rgba(254, 194, 96, 0.7) !important;
+  }
+  
+  .siteTitle {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+  }
+  
+  .siteTitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    background-color: rgb(254, 194, 96);
+    z-index: -1 !important;
+    transition: height 500ms;
+  }
+  
+  .siteTitle:hover::after {
+    height: 70%;
+  }
+  
+  .BodyContent,
+  .savedBookmarks {
+    border-top-style: dotted !important;
+    margin-top: 50px !important;
+  }
+  
+  .subTitle {
+    font-family: "Righteous", cursive;
+    font-size: calc(1.2rem + 0.5vw);
+    background: linear-gradient(
+      to right,
+      rgb(63, 165, 92) 30%,
+      rgb(178, 172, 74) 70%
+    );
+    background-clip: content-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  .bookmarkSubmit > .btn {
+    background-color: rgb(209, 81, 45) !important;
+    transition: background-color 300ms;
+  }
+  .bookmarkSubmit > .btn:hover {
+    background-color: rgb(167, 60, 31) !important;
+  }
+  
+  .siteUrlInput > input::placeholder,
+  .siteNameInput > input::placeholder {
+    color: gray !important;
+  }
+  .form-control:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 0.25rem  #fec26055;
+  }
+  
+  .alertIcons > span i {
+    font-size: 10px !important;
+  }
+  
+  .alertIcons span {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .alertIcons {
+    right: 10px !important;
+  }
+  
+  .checkIcon {
+    border-color:rgb(63, 165, 92) !important;
+    color: rgb(63, 165, 92) !important;
+  }
+  
+  
+  
+  .visitBtn {
+    border-color: rgb(63, 165, 92) !important ;
+    color: rgb(63, 165, 92) !important;
+  }
+  .visitBtn:hover {
+    background-color: rgb(63, 165, 92) !important;
+    color: white !important;
+  }
+  
+  .editBtn {
+    border-color:rgb(178, 172, 74) !important ;
+    color: rgb(178, 172, 74) !important;
+  }
+  
+  .editBtn:hover {
+    background-color: rgb(178, 172, 74) !important;
+    color: white !important;
+  }
+  table thead th {
+    min-width: calc(70px + 0.2vw);
+  }
+  
+  /* 2. end of table */
+  
+  /* start of modal box */
+  .modalBox {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    transition: opacity 200ms, visibility 200ms;
+  }
+  
+  .bg-1,
+  .bg-2,
+  .bg-3 {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .bg-1 {
+    background-color: rgb(229, 40, 77);
+  }
+  .bg-2 {
+    background-color: rgb(250, 169, 19);
+  }
+  .bg-3 {
+    background-color: rgb(3, 156, 3);
+  }
+  
+  .ruleTitle {
+    font-size: calc(1rem + 0.4vw);
+  }
+  
+  .modalContent {
+    width: 310px;
+    max-width: 400px;
+  }
+  
+  .modalContent ul li {
+    font-size: 20px;
+  }
+  
+  .btn-close:focus {
+    box-shadow: none;
+    opacity: 0.5 !important;
+  }
+ 
+  @media screen and (min-width: 567px) {
+    table thead th {
+      min-width: 140px !important;
+    }
+    .modalContent {
+      width: 450px !important;
+      max-width: 520px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    table thead th {
+      min-width: 140px !important;
+    }
+    .modalContent {
+      width: 600px !important;
+      max-width: 700px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    table thead th {
+      min-width: calc(120px + 0.2vw) !important;
+    }
+  }
+  
